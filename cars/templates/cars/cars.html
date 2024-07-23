@@ -1,0 +1,31 @@
+{% extends 'cars/base.html'%}
+{% load static %}
+
+{% block body %}
+{% for car in cars %}
+<div>
+  
+
+  <h1><a href="{% url 'car_details' car.pk %}">{{car.model}}</a> </h1>
+  <ul>
+    <li>Brand: {{car.brand}}</li>
+    <li>Price: {{car.price}}</li>
+  </ul>
+  <button> <a href="{% url 'car_update' car.pk %}">Update</a> 
+  <button> <a href="{% url 'car_delete' car.pk %}">Delete</a> 
+
+</div>
+
+
+
+
+{% endfor %}
+{% endblock %}
+
+
+
+<!-- <form action="{% url 'car_delete' car.pk %}" method='post' style="display:inline;">
+  {% csrf_token %}
+  <button type="submit">Delete</button>
+
+</form> -->

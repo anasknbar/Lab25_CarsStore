@@ -1,0 +1,49 @@
+body{
+  font-family: sans-serif;
+
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px;
+  padding: 5px;
+  background-color: rgb(123, 123, 230);
+  border-radius: 5px;
+  
+  
+}
+nav ul li:hover{
+  background-color: rgb(151, 151, 240);
+  
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+main div {
+  margin: 10px;
+  background-color:rgb(216, 216, 255);
+  display: flex;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 5px;
+  /* text-align: center; */
+  flex-direction: column;
+
+
+}
+
+main div button{
+  background-color: burlywood;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  
+}

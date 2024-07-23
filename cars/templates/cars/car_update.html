@@ -1,0 +1,14 @@
+{% extends 'cars/base.html' %}
+{% load static %}
+
+{% block body %}
+<div>
+  <h1>Add new Car</h1>
+
+<form method="post">
+{% csrf_token %}
+{{form.as_p}}
+<input type="submit" value="commit changes">
+</form>
+</div>
+{% endblock %}
