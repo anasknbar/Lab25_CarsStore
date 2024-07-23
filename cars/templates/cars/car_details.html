@@ -1,0 +1,17 @@
+{% extends 'cars/base.html'%}
+{% load static %}
+
+
+{% block body %}
+<div>
+  <h1>{{car.model}}</h1>
+<ul>
+  <li>Brand: {{car.brand}}</li>
+  <li>Price: {{car.price}}</li>
+  <li>Bought: {{car.is_bought}}</li>
+  <li>Buyer: {{car.buyer_id}}</li>
+  <li>Buy Time: {{car.buy_time}}</li>
+</ul>
+</div>
+
+{% endblock %}
